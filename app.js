@@ -83,7 +83,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("./home.ejs");
+  res.render("./gallery.ejs");
 });
 
 app.get("/login", (req, res) => {
