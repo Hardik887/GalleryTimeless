@@ -1,0 +1,70 @@
+<% layout('layouts/boilerplate')%>
+<!-- mask mask-custom  -->
+<div class="d-flex justify-content-center align-items-center h-100">
+    <div class="container col-md-3 p-0 mb-5 rounded mt-5 pt-4">
+      <div class="modal-content">
+        <h1 class="text-center mt-4 create-account">Create Account</h1>
+        <form
+          action="/register"
+          method="POST"
+          class="validated-form pr-4 pl-4"
+          novalidate
+        >
+          <div class="form-group">
+            <input
+              class="form-control mt-4"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control mt-3"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control pwd mt-3"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              class="form-control pwd mt-3"
+              type="password"
+              id="password_confirmation"
+              name="password_confirmation"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <p></p>
+          <button class="btn btn-dark col-md-12">Sign Up</button>
+        </form>
+        <div class="social-container">
+    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+        <div class="text-center text-in pt-2 mb-4 pb-2">
+          <small
+            >Already registered?
+            <a href="/login" style="color: black; font-size: 15px">Sign In</a>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
