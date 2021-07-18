@@ -83,7 +83,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("./login.ejs");
+  res.render("./users/login.ejs");
 });
 
 app.get("/login", (req, res) => {
