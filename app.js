@@ -83,7 +83,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  res.render("./gallery.ejs");
+  res.render("./login.ejs");
 });
 
 app.get("/login", (req, res) => {
@@ -200,6 +200,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`LISTENING ON PORT ${port}`);
 });
-
-// Script:
-// "deploy": "nodemon app.js"
