@@ -2,7 +2,6 @@ const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
 const ejsMate = require("ejs-mate");
-require("dotenv").config();
 const session = require("express-session");
 const flash = require("connect-flash");
 const passport = require("passport");
@@ -17,6 +16,10 @@ const MongoStore = require("connect-mongo");
 const helmet = require("helmet");
 
 const app = express();
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
